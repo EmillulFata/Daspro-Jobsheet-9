@@ -12,11 +12,12 @@ public class ArrayRataNilai07 {
       System.out.print("Input Nilai Mahasiswa Ke-" + (i + 1) + " : ");
       NilaiMahasiswa[i] = input.nextInt();
       }
+      System.out.println("\n Daftar Mahasiswa Yang Lulus : ");
       for (int i = 0; i < NilaiMahasiswa.length; i++) {
-        Total += NilaiMahasiswa[i];
-      }
-      Rerata = Total/NilaiMahasiswa.length;
-      System.out.println("Rerata Nilai = " +Rerata);
+        if (NilaiMahasiswa[i] > 70) {
+          System.out.println("Mahasiswa Ke-" + i + " Lulus!");
+        }
     }
   }
+}
 
